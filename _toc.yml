@@ -1,6 +1,6 @@
 format: jb-book
 root: intro.ipynb
-title: Play
+title: Ubermensch
 parts:
   - caption: Part 1
     chapters:

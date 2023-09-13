@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>. &#8212; My Jupyter Book</title>
+    <title>Other aspects to consider &#8212; My Jupyter Book</title>
   
   
   
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="." href="act_1_0_0_5.html" />
-    <link rel="prev" title="." href="act_1_0_0_3.html" />
+    <link rel="prev" title="Regression" href="act_1_0_0_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -141,8 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="https://github.com/muzaale/muzaale.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="https://github.com/muzaale/muzaale.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="https://github.com/abikesa/abikesa.github.io/blob/main/png/idc.png?raw=true" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="https://github.com/abikesa/abikesa.github.io/blob/main/png/idc.png?raw=true" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -168,10 +168,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="act_1_0_0_1.html">.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="act_1_0_0_2.html">.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="act_1_0_0_3.html">.</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="act_1_0_0_1.html">Framework of everything</a></li>
+<li class="toctree-l1"><a class="reference internal" href="act_1_0_0_2.html">Key Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="act_1_0_0_3.html">Regression</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Other aspects to consider</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_0_5.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_0_6.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_0_7.html">.</a></li>
@@ -318,7 +318,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -329,11 +331,25 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>.</h1>
+    <h1>Other aspects to consider</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluate-model-assumptions">Evaluate Model Assumptions:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interaction-effects">Interaction Effects:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-importance">Feature Importance:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effect-sizes">Effect Sizes:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretability">Interpretability:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-validation">Cross-Validation:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-comparison">Model Comparison:</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -343,8 +359,43 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="other-aspects-to-consider">
+<h1>Other aspects to consider<a class="headerlink" href="#other-aspects-to-consider" title="Permalink to this heading">#</a></h1>
+<p>In addition to the hierarchical regression analysis, here are some further aspects you might want to consider for a more in-depth understanding:</p>
+<section id="evaluate-model-assumptions">
+<h2>Evaluate Model Assumptions:<a class="headerlink" href="#evaluate-model-assumptions" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Linearity</strong>: Plot the residuals against predicted values to check for linearity. If the plot shows a non-linear pattern, consider transforming your variables.</p></li>
+<li><p><strong>Homoscedasticity</strong>: Again, a plot of residuals vs. predicted values should show constant variance across the range of the dependent variable. If not, weighted least squares (WLS) regression might be an alternative.</p></li>
+<li><p><strong>Independence</strong>: The Durbin-Watson statistic in the regression output will help you detect autocorrelation, particularly important if you’re dealing with time-series data.</p></li>
+</ol>
+</section>
+<section id="interaction-effects">
+<h2>Interaction Effects:<a class="headerlink" href="#interaction-effects" title="Permalink to this heading">#</a></h2>
+<p>In high ICC scenarios, the relationships between variables might not be straightforward. You could test interaction effects between the primary predictor (e.g., ‘Founder_Influence’) and other predictors (e.g., ‘Societal_Impact’). This can provide insights into whether the effect of one variable changes at different levels of another variable.</p>
+</section>
+<section id="feature-importance">
+<h2>Feature Importance:<a class="headerlink" href="#feature-importance" title="Permalink to this heading">#</a></h2>
+<p>Use techniques like Recursive Feature Elimination (RFE) to identify the most important predictors. This can be useful when you have a large number of predictors and want to know which ones are the most significant.</p>
+</section>
+<section id="effect-sizes">
+<h2>Effect Sizes:<a class="headerlink" href="#effect-sizes" title="Permalink to this heading">#</a></h2>
+<p>Statistical significance doesn’t always translate to practical significance. Make sure to calculate and report effect sizes like Cohen’s f^2, along with the p-values.</p>
+</section>
+<section id="interpretability">
+<h2>Interpretability:<a class="headerlink" href="#interpretability" title="Permalink to this heading">#</a></h2>
+<p>You can also incorporate domain knowledge into your model. For instance, if you understand the underlying mechanisms that cause high ICCs, you can design variables that capture this information, making your model more interpretable.</p>
+</section>
+<section id="cross-validation">
+<h2>Cross-Validation:<a class="headerlink" href="#cross-validation" title="Permalink to this heading">#</a></h2>
+<p>To ensure that your model generalizes well to new data, perform cross-validation. This will give you an unbiased estimate of the model’s performance on an independent dataset.</p>
+</section>
+<section id="model-comparison">
+<h2>Model Comparison:<a class="headerlink" href="#model-comparison" title="Permalink to this heading">#</a></h2>
+<p>Consider using information criteria like AIC or BIC for comparing models. These metrics take into account both the goodness of fit and the complexity of the model, helping you choose the most appropriate model.</p>
+<p>Given your multidisciplinary interests and your work with ICCs, incorporating these elements could provide you with a nuanced understanding of how different variables interact and contribute to the outcome in both high and low ICC scenarios. This could be particularly useful for your objectives, whether they relate to research, tech startups, or other areas.</p>
+<p>Would you like to delve deeper into any of these aspects?</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -384,7 +435,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">.</p>
+        <p class="prev-next-title">Regression</p>
       </div>
     </a>
     <a class="right-next"
@@ -406,6 +457,26 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluate-model-assumptions">Evaluate Model Assumptions:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interaction-effects">Interaction Effects:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-importance">Feature Importance:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effect-sizes">Effect Sizes:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretability">Interpretability:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-validation">Cross-Validation:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-comparison">Model Comparison:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -415,7 +486,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By Your Name
+By Abaise Igaga
 </p>
 
   </div>
@@ -424,7 +495,7 @@ By Your Name
     
   <p class="copyright">
     
-      © Copyright Mwaka.
+      © Copyright 2023.
       <br/>
     
   </p>
